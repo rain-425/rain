@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 預設（小於 768px，例如手機）：綠色 */
+        #main {
+            height: 300px;
+            width: 300px;
+            background-color: #4CAF50; /* Emerald Green */
+            color: white; /* 讓文字更清楚 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        /* 768px 以上（例如平板）：橘色 */
+        @media screen and (min-width: 768px) {
+            #main {
+                background-color: #FF9800; /* Orange */
+            }
+        }
+
+        /* 1200px 以上（例如電腦螢幕）：深藍色 */
+        @media screen and (min-width: 1200px) {
+            #main {
+                background-color: #1E88E5; /* Blue */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">Hello</div>
+</body>
+</html>
